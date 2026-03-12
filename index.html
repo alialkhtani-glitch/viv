@@ -15,204 +15,226 @@
 <style>
 @font-face{
   font-family:'SaudiWeb';
-  src:url('./assets/SaudiWeb-Regular.woff') format('woff');
+  src:url('/assets/SaudiWeb-Regular.woff') format('woff');
   font-weight:400;
   font-style:normal;
 }
 
 @font-face{
   font-family:'SaudiWeb';
-  src:url('./assets/SaudiWeb-Bold.woff') format('woff');
+  src:url('/assets/SaudiWeb-Bold.woff') format('woff');
   font-weight:700;
   font-style:normal;
 }
 
-body{font-family:'SaudiWeb','Noto Sans Arabic',sans-serif}
-.hero-bg{background:linear-gradient(120deg,#0f172a,#1e3a8a,#2563eb);background-size:200% 200%;animation:bgmove 12s ease infinite}
-@keyframes bgmove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-.section-title{font-size:38px;font-weight:900}
-.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
-h1,h2,h3,h4,.section-title,.font-black,.font-bold{font-family:'SaudiWeb','Noto Sans Arabic',sans-serif}
+body{
+  font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
+}
+
+.hero-bg{
+  background:linear-gradient(120deg,#0f172a,#1e3a8a,#2563eb);
+  background-size:200% 200%;
+  animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.section-title{
+  font-size:38px;
+  font-weight:900;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.1);
+}
+
+h1,h2,h3,h4,.section-title,.font-black,.font-bold{
+  font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
+}
 </style>
 </head>
 
 <body class="bg-white text-slate-800">
 
 <header class="bg-white shadow sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-<div class="flex items-center gap-4">
-<img src="/logo.png"> alt="شعار فيف الدروب" class="w-12 h-12 object-contain">
-<div>
-<h1 class="font-black text-xl">فيف الدروب للتجارة</h1>
-<p class="text-xs tracking-widest">FIVE AL DURUB TRADING</p>
-</div>
-</div>
+    <div class="flex items-center gap-4">
+      <img src="/logo.png" alt="شعار فيف الدروب" class="w-12 h-12 object-contain">
+      <div>
+        <h1 class="font-black text-xl">فيف الدروب للتجارة</h1>
+        <p class="text-xs tracking-widest">FIVE AL DURUB TRADING</p>
+      </div>
+    </div>
 
-<nav class="hidden md:flex gap-8 font-semibold text-sm items-center">
-<a href="/">الرئيسية</a>
-<a href="/services">الخدمات</a>
-<a href="/projects">المشاريع</a>
-<a href="/quality">الجودة</a>
-<a href="/contact">تواصل</a>
-<a href="/en" class="text-blue-600">EN</a>
-</nav>
+    <nav class="hidden md:flex gap-8 font-semibold text-sm items-center">
+      <a href="/">الرئيسية</a>
+      <a href="/services">الخدمات</a>
+      <a href="/projects">المشاريع</a>
+      <a href="/quality">الجودة</a>
+      <a href="/contact">تواصل</a>
+      <a href="/en" class="text-blue-600">EN</a>
+    </nav>
 
-</div>
+  </div>
 </header>
 
 <section id="home" class="hero-bg text-white py-32">
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
-<div>
-<h2 class="text-5xl font-black leading-tight mb-6">
-منصة متقدمة
-<br>
-للحلول الصناعية والهندسية
-</h2>
+    <div>
+      <h2 class="text-5xl font-black leading-tight mb-6">
+        منصة متقدمة
+        <br>
+        للحلول الصناعية والهندسية
+      </h2>
 
-<p class="text-lg opacity-90 mb-8">
-فيف الدروب تقدم حلولاً صناعية وهندسية متقدمة تشمل التصنيع المعدني المتخصص، تجهيز المرافق والبنية التحتية، وأنظمة المحاكاة والتدريب المتقدمة.
-</p>
+      <p class="text-lg opacity-90 mb-8">
+        فيف الدروب تقدم حلولاً صناعية وهندسية متقدمة تشمل التصنيع المعدني المتخصص، تجهيز المرافق والبنية التحتية، وأنظمة المحاكاة والتدريب المتقدمة.
+      </p>
 
-<div class="flex flex-wrap gap-4">
-<a href="/services" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold">
-استكشف خدماتنا
-</a>
+      <div class="flex flex-wrap gap-4">
+        <a href="/services" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold">
+          استكشف خدماتنا
+        </a>
 
-<a href="/projects" class="border border-white text-white px-8 py-4 rounded-xl font-bold">
-المشاريع
-</a>
-</div>
+        <a href="/projects" class="border border-white text-white px-8 py-4 rounded-xl font-bold">
+          المشاريع
+        </a>
+      </div>
+    </div>
 
-</div>
+    <div class="flex justify-center">
+      <img src="/logo.png" alt="شعار فيف الدروب" class="w-72 object-contain">
+    </div>
 
-<div class="flex justify-center">
-<img src="./logo.png" alt="شعار فيف الدروب" class="w-72">
-</div>
-
-</div>
+  </div>
 </section>
 
 <section id="about" class="py-24 bg-gray-50">
-<div class="max-w-6xl mx-auto px-6">
+  <div class="max-w-6xl mx-auto px-6">
 
-<h2 class="section-title mb-12 text-center">من نحن</h2>
+    <h2 class="section-title mb-12 text-center">من نحن</h2>
 
-<p class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
-نحن في فيف الدروب نكرس خبراتنا لتقديم حلول متقدمة ومتكاملة تلبي احتياجات القطاعات الصناعية والهندسية والطبية والتدريبية في المملكة وخارجها.
-ننطلق برؤية عملية تجمع بين الجودة والدقة والموثوقية، ونركز على تقديم قيمة حقيقية من خلال تصميم وتنفيذ الهياكل المعدنية المتخصصة، تجهيز المرافق والبنية التحتية، وتطوير حلول المحاكاة والتدريب المتقدمة.
-نؤمن أن نجاحنا يرتبط بقدرتنا على فهم احتياجات عملائنا وتحويلها إلى حلول عملية عالية المستوى تجمع بين الكفاءة الفنية والمرونة التشغيلية والالتزام بمعايير التنفيذ.
-</p>
+    <p class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
+      نحن في فيف الدروب نكرس خبراتنا لتقديم حلول متقدمة ومتكاملة تلبي احتياجات القطاعات الصناعية والهندسية والطبية والتدريبية في المملكة وخارجها.
+      ننطلق برؤية عملية تجمع بين الجودة والدقة والموثوقية، ونركز على تقديم قيمة حقيقية من خلال تصميم وتنفيذ الهياكل المعدنية المتخصصة، تجهيز المرافق والبنية التحتية، وتطوير حلول المحاكاة والتدريب المتقدمة.
+      نؤمن أن نجاحنا يرتبط بقدرتنا على فهم احتياجات عملائنا وتحويلها إلى حلول عملية عالية المستوى تجمع بين الكفاءة الفنية والمرونة التشغيلية والالتزام بمعايير التنفيذ.
+    </p>
 
-<div class="grid md:grid-cols-2 gap-12 mt-16">
+    <div class="grid md:grid-cols-2 gap-12 mt-16">
 
-<div class="bg-white p-10 rounded-2xl shadow">
-<h3 class="text-2xl font-bold mb-4">رؤيتنا</h3>
-<p>
-أن نكون من الجهات الرائدة في تقديم الحلول الصناعية والهندسية المتخصصة وأنظمة المحاكاة والتدريب المتقدمة، عبر بناء كيان وطني موثوق يرتكز على الابتكار والجودة والجاهزية العالية لتلبية احتياجات المشاريع النوعية في المملكة وخارجها.
-</p>
-</div>
+      <div class="bg-white p-10 rounded-2xl shadow">
+        <h3 class="text-2xl font-bold mb-4">رؤيتنا</h3>
+        <p>
+          أن نكون من الجهات الرائدة في تقديم الحلول الصناعية والهندسية المتخصصة وأنظمة المحاكاة والتدريب المتقدمة، عبر بناء كيان وطني موثوق يرتكز على الابتكار والجودة والجاهزية العالية لتلبية احتياجات المشاريع النوعية في المملكة وخارجها.
+        </p>
+      </div>
 
-<div class="bg-white p-10 rounded-2xl shadow">
-<h3 class="text-2xl font-bold mb-4">رسالتنا</h3>
-<p>
-تقديم حلول متكاملة وموثوقة في مجالات التصنيع المعدني، الهياكل المتخصصة، تجهيز المرافق، وأنظمة المحاكاة والتدريب، من خلال كفاءات متخصصة وتنفيذ عالي الجودة وشراكات فعالة، بما يحقق قيمة مستدامة لعملائنا ويدعم التوجهات الوطنية نحو التطوير والتوطين والتميز التنفيذي.
-</p>
-</div>
+      <div class="bg-white p-10 rounded-2xl shadow">
+        <h3 class="text-2xl font-bold mb-4">رسالتنا</h3>
+        <p>
+          تقديم حلول متكاملة وموثوقة في مجالات التصنيع المعدني، الهياكل المتخصصة، تجهيز المرافق، وأنظمة المحاكاة والتدريب، من خلال كفاءات متخصصة وتنفيذ عالي الجودة وشراكات فعالة، بما يحقق قيمة مستدامة لعملائنا ويدعم التوجهات الوطنية نحو التطوير والتوطين والتميز التنفيذي.
+        </p>
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <section id="services" class="py-24">
-<div class="max-w-7xl mx-auto px-6">
+  <div class="max-w-7xl mx-auto px-6">
 
-<h2 class="section-title text-center mb-16">مجالات العمل</h2>
+    <h2 class="section-title text-center mb-16">مجالات العمل</h2>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<div class="service-card p-8 border rounded-xl">
-<h3 class="text-xl font-bold mb-4">التصنيع والهياكل المعدنية</h3>
-<p>
-Skid Frames، خزانات صناعية، Pipe Spool، هياكل الصلب الثقيلة، وأنظمة الطاقة المتجددة.
-</p>
-</div>
+      <div class="service-card p-8 border rounded-xl">
+        <h3 class="text-xl font-bold mb-4">التصنيع والهياكل المعدنية</h3>
+        <p>
+          Skid Frames، خزانات صناعية، Pipe Spool، هياكل الصلب الثقيلة، وأنظمة الطاقة المتجددة.
+        </p>
+      </div>
 
-<div class="service-card p-8 border rounded-xl">
-<h3 class="text-xl font-bold mb-4">الحدادة والتصنيع المتقدم</h3>
-<p>
-CNC Laser Cutting، CNC Machining، أعمال الاستانلس ستيل الإنشائية والديكورية.
-</p>
-</div>
+      <div class="service-card p-8 border rounded-xl">
+        <h3 class="text-xl font-bold mb-4">الحدادة والتصنيع المتقدم</h3>
+        <p>
+          CNC Laser Cutting، CNC Machining، أعمال الاستانلس ستيل الإنشائية والديكورية.
+        </p>
+      </div>
 
-<div class="service-card p-8 border rounded-xl">
-<h3 class="text-xl font-bold mb-4">المرافق والبنية التحتية</h3>
-<p>
-توريد وتركيب أنظمة السياج الكهربائية والبوابات HDG وتجهيز المرافق.
-</p>
-</div>
+      <div class="service-card p-8 border rounded-xl">
+        <h3 class="text-xl font-bold mb-4">المرافق والبنية التحتية</h3>
+        <p>
+          توريد وتركيب أنظمة السياج الكهربائية والبوابات HDG وتجهيز المرافق.
+        </p>
+      </div>
 
-<div class="service-card p-8 border rounded-xl">
-<h3 class="text-xl font-bold mb-4">أنظمة المحاكاة الطبية</h3>
-<p>
-معامل محاكاة طبية، دمى تدريبية، أنظمة AV، محاكاة الجراحة.
-</p>
-</div>
+      <div class="service-card p-8 border rounded-xl">
+        <h3 class="text-xl font-bold mb-4">أنظمة المحاكاة الطبية</h3>
+        <p>
+          معامل محاكاة طبية، دمى تدريبية، أنظمة AV، محاكاة الجراحة.
+        </p>
+      </div>
 
-<div class="service-card p-8 border rounded-xl">
-<h3 class="text-xl font-bold mb-4">الواقع الافتراضي للتدريب</h3>
-<p>
-أنظمة VR وAR لتدريب الكوادر الطبية والفنية.
-</p>
-</div>
+      <div class="service-card p-8 border rounded-xl">
+        <h3 class="text-xl font-bold mb-4">الواقع الافتراضي للتدريب</h3>
+        <p>
+          أنظمة VR وAR لتدريب الكوادر الطبية والفنية.
+        </p>
+      </div>
 
-<div class="service-card p-8 border rounded-xl">
-<h3 class="text-xl font-bold mb-4">التوريد الهندسي</h3>
-<p>
-توريد معدات ومكونات المشاريع الصناعية والطبية.
-</p>
-</div>
+      <div class="service-card p-8 border rounded-xl">
+        <h3 class="text-xl font-bold mb-4">التوريد الهندسي</h3>
+        <p>
+          توريد معدات ومكونات المشاريع الصناعية والطبية.
+        </p>
+      </div>
 
-</div>
+    </div>
 
-<div class="text-center mt-12">
-<a href="/services" class="inline-block bg-blue-700 text-white px-8 py-4 rounded-xl font-bold">
-عرض المزيد
-</a>
-</div>
+    <div class="text-center mt-12">
+      <a href="/services" class="inline-block bg-blue-700 text-white px-8 py-4 rounded-xl font-bold">
+        عرض المزيد
+      </a>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <section id="contact" class="py-24 bg-gray-900 text-white">
-<div class="max-w-5xl mx-auto px-6 text-center">
+  <div class="max-w-5xl mx-auto px-6 text-center">
 
-<h2 class="text-4xl font-black mb-6">تواصل معنا</h2>
+    <h2 class="text-4xl font-black mb-6">تواصل معنا</h2>
 
-<p class="mb-4">فيف الدروب للتجارة</p>
-<p class="mb-4">المملكة العربية السعودية</p>
-<p class="mb-4">ص.ب 164</p>
-<p class="mb-10">الرياض 11528</p>
+    <p class="mb-4">فيف الدروب للتجارة</p>
+    <p class="mb-4">المملكة العربية السعودية</p>
+    <p class="mb-4">ص.ب 164</p>
+    <p class="mb-10">الرياض 11528</p>
 
-<p class="text-lg">
-<a href="mailto:info.durub@algtc.com?subject=استفسار عبر موقع فيف الدروب" class="underline decoration-white/30 underline-offset-4 hover:text-blue-300">
-info.durub@algtc.com
-</a>
-</p>
+    <p class="text-lg">
+      <a href="mailto:info.durub@algtc.com?subject=استفسار عبر موقع فيف الدروب" class="underline decoration-white/30 underline-offset-4 hover:text-blue-300">
+        info.durub@algtc.com
+      </a>
+    </p>
 
-<div class="mt-10">
-<a href="/contact" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl font-bold">
-صفحة التواصل
-</a>
-</div>
+    <div class="mt-10">
+      <a href="/contact" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl font-bold">
+        صفحة التواصل
+      </a>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <footer class="bg-black text-gray-400 py-8 text-center text-sm">
-© 2026 Five Al Durub Trading
+  © 2026 Five Al Durub Trading
 </footer>
 
 <script>
