@@ -1,213 +1,159 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>فيف الدروب للتجارة | الجودة والاعتمادات</title>
+<title>المشاريع | فيف الدروب للتجارة</title>
+<meta name="description" content="نماذج من المشاريع الصناعية والهندسية التي تنفذها فيف الدروب للتجارة">
 
 <script src="https://cdn.tailwindcss.com"></script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
 @font-face{
-font-family:'SaudiWeb';
-src:url('/assets/SaudiWeb-Regular.woff') format('woff');
-font-weight:400;
-font-style:normal;
+  font-family:'SaudiWeb';
+  src:url('/assets/SaudiWeb-Regular.woff') format('woff');
+  font-weight:400;
+  font-style:normal;
 }
 
 @font-face{
-font-family:'SaudiWeb';
-src:url('/assets/SaudiWeb-Bold.woff') format('woff');
-font-weight:700;
-font-style:normal;
+  font-family:'SaudiWeb';
+  src:url('/assets/SaudiWeb-Bold.woff') format('woff');
+  font-weight:700;
+  font-style:normal;
 }
 
 body{
-font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
+  font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 }
 
-h1,h2,h3,h4,.font-bold,.font-black{
-font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
+.section-title{
+  font-size:38px;
+  font-weight:900;
+}
+
+.project-card{
+  transition:all .25s ease;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+h1,h2,h3,h4,.font-bold,.font-black,.section-title{
+  font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 }
 </style>
-@font-face{
-font-family:'SaudiWeb';
-src:url('/assets/SaudiWeb-Regular.woff') format('woff');
-font-weight:400;
-}
-
-@font-face{
-font-family:'SaudiWeb';
-src:url('/assets/SaudiWeb-Bold.woff') format('woff');
-font-weight:700;
-}
-
-body{
-font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
-}
-
-h1,h2,h3,h4,.font-bold,.font-black{
-font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
-}
-</style>
-
 </head>
 
+<body class="bg-gray-50 text-slate-800">
 
-<body class="bg-gray-50 text-gray-800">
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
+    <div class="flex items-center gap-4">
+      <img src="/logo.png" alt="شعار فيف الدروب" class="w-12 h-12 object-contain">
+      <div>
+        <h1 class="font-black text-xl">فيف الدروب للتجارة</h1>
+        <p class="text-xs tracking-widest">FIVE AL DURUB TRADING</p>
+      </div>
+    </div>
 
-<header class="bg-white shadow">
+    <nav class="hidden md:flex gap-8 font-semibold text-sm items-center">
+      <a href="/">الرئيسية</a>
+      <a href="/services">الخدمات</a>
+      <a href="/projects">المشاريع</a>
+      <a href="/quality">الجودة</a>
+      <a href="/contact">تواصل</a>
+      <a href="/en" class="text-blue-600">EN</a>
+    </nav>
 
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-<div class="flex items-center gap-3">
-
-<img src="/logo.png" class="w-10">
-
-<div>
-
-<h1 class="font-bold">فيف الدروب للتجارة</h1>
-<p class="text-xs text-gray-500">Five Al Durub Trading</p>
-
-</div>
-</div>
-
-
-<nav class="flex gap-6 text-sm font-semibold">
-
-<a href="/">الرئيسية</a>
-<a href="/services">الخدمات</a>
-<a href="/projects">المشاريع</a>
-<a href="/quality">الجودة</a>
-<a href="/contact">تواصل</a>
-
-</nav>
-
-</div>
-
+  </div>
 </header>
 
-
-
-<section class="py-20 text-center">
-
-<h1 class="text-4xl font-bold mb-6">
-
-مشاريعنا
-
-</h1>
-
-<p class="text-lg text-gray-600">
-
-نماذج من المشاريع الصناعية والهندسية التي نفذتها فيف الدروب
-
-</p>
-
+<section class="py-14">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="section-title mb-6">مشاريعنا</h2>
+    <p class="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+      نماذج من المشاريع الصناعية والهندسية التي تنفذها فيف الدروب في مجالات التصنيع، الهياكل المعدنية، البنية التحتية، وتجهيز بيئات التدريب والمحاكاة.
+    </p>
+  </div>
 </section>
 
+<section class="pb-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+      <div class="project-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">Skid Frame صناعي</h3>
+        <p class="text-slate-700 leading-8">
+          تصميم وتنفيذ وتجميع Skid Frame مخصص للأنظمة الصناعية والتشغيلية المتخصصة.
+        </p>
+      </div>
 
-<section class="max-w-7xl mx-auto px-6 pb-24">
+      <div class="project-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">هياكل معدنية ثقيلة</h3>
+        <p class="text-slate-700 leading-8">
+          تنفيذ هياكل معدنية ثقيلة للمشاريع الصناعية والبنية التحتية وفق متطلبات تشغيلية وهندسية دقيقة.
+        </p>
+      </div>
 
-<div class="grid md:grid-cols-3 gap-10">
+      <div class="project-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">معامل محاكاة طبية</h3>
+        <p class="text-slate-700 leading-8">
+          تجهيز وإنشاء معامل محاكاة طبية متكاملة للتدريب السريري والتعليمي.
+        </p>
+      </div>
 
+      <div class="project-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">خزانات ووحدات صناعية</h3>
+        <p class="text-slate-700 leading-8">
+          تصنيع خزانات صناعية ووحدات تشغيلية تشمل تطبيقات الضغط والتخزين والمعالجة.
+        </p>
+      </div>
 
+      <div class="project-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">أنظمة أمنية ومعدنية</h3>
+        <p class="text-slate-700 leading-8">
+          تنفيذ أبواب أمنية، فتحات سقف، سلالم معدنية، ومكونات وصول وخدمة للمرافق.
+        </p>
+      </div>
 
-<div class="bg-white rounded-xl shadow p-6">
+      <div class="project-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">منتجات البنية التحتية</h3>
+        <p class="text-slate-700 leading-8">
+          توريد حلول ومنتجات مخصصة للبنية التحتية والمرافق تشمل مكونات GRP والخرسانة والمرافق التشغيلية.
+        </p>
+      </div>
 
-<h3 class="text-xl font-bold mb-4">
-
-Skid Frame صناعي
-
-</h3>
-
-<p>
-
-تصميم وتنفيذ وتجميع Skid Frame مخصص للأنظمة الصناعية.
-
-</p>
-
-</div>
-
-
-
-<div class="bg-white rounded-xl shadow p-6">
-
-<h3 class="text-xl font-bold mb-4">
-
-هياكل معدنية ثقيلة
-
-</h3>
-
-<p>
-
-تنفيذ هياكل معدنية ثقيلة للمشاريع الصناعية والبنية التحتية.
-
-</p>
-
-</div>
-
-
-
-<div class="bg-white rounded-xl shadow p-6">
-
-<h3 class="text-xl font-bold mb-4">
-
-معامل محاكاة طبية
-
-</h3>
-
-<p>
-
-تجهيز وإنشاء معامل محاكاة طبية متكاملة للتدريب.
-
-</p>
-
-</div>
-
-
-
-<div class="bg-white rounded-xl shadow p-6">
-
-<h3 class="text-xl font-bold mb-4">
-
-أنظمة تدريب ومحاكاة
-
-</h3>
-
-<p>
-
-توريد أنظمة محاكاة ودمى تدريب عالية الدقة.
-
-</p>
-
-</div>
-
-
-
-</div>
-
+    </div>
+  </div>
 </section>
 
+<section class="py-20 bg-gray-900 text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-black mb-6">تواصل معنا</h2>
 
+    <p class="mb-4">فيف الدروب للتجارة</p>
+    <p class="mb-4">المملكة العربية السعودية</p>
+    <p class="mb-4">ص.ب 164</p>
+    <p class="mb-10">الرياض 11528</p>
 
-<footer class="bg-gray-900 text-white text-center py-10">
+    <p class="text-lg">
+      <a href="mailto:info.durub@algtc.com?subject=استفسار عبر موقع فيف الدروب" class="underline decoration-white/30 underline-offset-4 hover:text-blue-300">
+        info.durub@algtc.com
+      </a>
+    </p>
+  </div>
+</section>
 
-<p>
-
-© Five Al Durub Trading
-
-</p>
-
+<footer class="bg-black text-gray-400 py-8 text-center text-sm">
+  © 2026 Five Al Durub Trading
 </footer>
-
-
 
 </body>
 </html>
