@@ -32,9 +32,25 @@ font-weight:700;
 body{
 font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 }
+@keyframes whatsappPulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
 
+.whatsapp-pulse{
+animation:whatsappPulse 1.6s infinite;
+}
 </style>
+@keyframes whatsappPulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
 
+.whatsapp-pulse{
+animation:whatsappPulse 1.6s infinite;
+}
 </head>
 
 <body class="bg-white text-slate-800">
@@ -44,6 +60,17 @@ font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 {{ content }}
 
 {% include footer.html %}
+<!-- WhatsApp Floating Button -->
 
+<a href="https://wa.me/966541112095"
+class="whatsapp-pulse fixed bottom-6 left-6 z-50 bg-green-600 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:bg-green-700 transition">
+
+💬
+
+<span class="absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+1
+</span>
+
+</a>
 </body>
 </html>
