@@ -27,11 +27,37 @@
 }
 
 body{
-font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
+  font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 }
 
-h1,h2,h3,h4,.font-bold,.font-black{
-font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
+.hero-bg{
+  background:linear-gradient(120deg,#0f172a,#1e3a8a,#2563eb);
+  background-size:200% 200%;
+  animation:bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.section-title{
+  font-size:38px;
+  font-weight:900;
+}
+
+.service-card{
+  transition:all .25s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+h1,h2,h3,h4,.font-bold,.font-black,.section-title{
+  font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 }
 </style>
 </head>
@@ -39,182 +65,182 @@ font-family:'SaudiWeb','Noto Sans Arabic',sans-serif;
 <body class="bg-white text-slate-800">
 
 <header class="bg-white shadow sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-<div class="flex items-center gap-4">
-<img src="/logo.png" alt="شعار فيف الدروب" class="w-12 h-12 object-contain">
-<div>
-<h1 class="font-black text-xl">فيف الدروب للتجارة</h1>
-<p class="text-xs tracking-widest">FIVE AL DURUB TRADING</p>
-</div>
-</div>
+    <div class="flex items-center gap-4">
+      <img src="/logo.png" alt="شعار فيف الدروب" class="w-12 h-12 object-contain">
+      <div>
+        <h1 class="font-black text-xl">فيف الدروب للتجارة</h1>
+        <p class="text-xs tracking-widest">FIVE AL DURUB TRADING</p>
+      </div>
+    </div>
 
-<nav class="hidden md:flex gap-8 font-semibold text-sm items-center">
-<a href="/">الرئيسية</a>
-<a href="/services">الخدمات</a>
-<a href="/projects">المشاريع</a>
-<a href="/quality">الجودة</a>
-<a href="/contact">تواصل</a>
-<a href="/en" class="text-blue-600">EN</a>
-</nav>
+    <nav class="hidden md:flex gap-8 font-semibold text-sm items-center">
+      <a href="/">الرئيسية</a>
+      <a href="/services">الخدمات</a>
+      <a href="/projects">المشاريع</a>
+      <a href="/quality">الجودة</a>
+      <a href="/contact">تواصل</a>
+      <a href="/en" class="text-blue-600">EN</a>
+    </nav>
 
-</div>
+  </div>
 </header>
 
-<section class="hero-bg text-white py-24">
-<div class="max-w-7xl mx-auto px-6 text-center">
-<h2 class="text-5xl font-black leading-tight mb-6">خدماتنا ومنتجاتنا</h2>
-<p class="text-lg opacity-90 max-w-4xl mx-auto leading-relaxed">
-تقدم فيف الدروب للتجارة نطاقاً متكاملاً من المنتجات والحلول الصناعية والهندسية المتخصصة، يشمل منتجات البنية التحتية والمرافق، الأنظمة الفولاذية والإنشائية، حلول التصنيع والتجميع الهندسي، أنظمة المحاكاة الطبية والتعليمية، ومنتجات صناعية داعمة لقطاعات متعددة.
-</p>
-</div>
+<section class="hero-bg text-white py-12 md:py-16">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-black leading-tight mb-6">خدماتنا ومنتجاتنا</h2>
+    <p class="text-base md:text-lg opacity-90 max-w-4xl mx-auto leading-relaxed">
+      تقدم فيف الدروب للتجارة نطاقاً متكاملاً من المنتجات والحلول الصناعية والهندسية المتخصصة، يشمل منتجات البنية التحتية والمرافق، الأنظمة الفولاذية والإنشائية، حلول التصنيع والتجميع الهندسي، أنظمة المحاكاة الطبية والتعليمية، ومنتجات صناعية داعمة لقطاعات متعددة.
+    </p>
+  </div>
 </section>
 
-<section class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-6">
-<h2 class="section-title text-center mb-14">القطاعات الرئيسية</h2>
+<section class="py-16 md:py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="section-title text-center mb-12 md:mb-14">القطاعات الرئيسية</h2>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<div class="service-card bg-white p-8 rounded-2xl shadow border">
-<h3 class="text-2xl font-bold mb-4">منتجات البنية التحتية والمرافق</h3>
-<p class="text-slate-600 mb-6">
-حلول متخصصة في منتجات GRP والخرسانة المسلحة المستخدمة في شبكات المرافق والخدمات والبنية التحتية.
-</p>
-<ul class="space-y-2 text-sm text-slate-700 leading-7">
-<li>• أنابيب ووصلات GRP / GRV / RPM</li>
-<li>• أنظمة أنابيب RTR / GRE</li>
-<li>• أنابيب ووصلات الخرسانة المسلحة RCP</li>
-<li>• خزانات GRP أحادية ومزدوجة الجدار</li>
-<li>• خزانات خرسانية مسلحة</li>
-<li>• غرف تفتيش ومناور ووصلات هيكلية من GRP</li>
-<li>• غرف تفتيش وأحواض تصريف وقنوات صندوقية خرسانية</li>
-<li>• خزائن عدادات الكهرباء والمياه من GRP</li>
-<li>• صناديق الحريق والحمامات المتنقلة من GRP</li>
-</ul>
-</div>
+      <div class="service-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">منتجات البنية التحتية والمرافق</h3>
+        <p class="text-slate-600 mb-6 leading-8">
+          حلول متخصصة في منتجات GRP والخرسانة المسلحة المستخدمة في شبكات المرافق والخدمات والبنية التحتية.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 leading-7">
+          <li>• أنابيب ووصلات GRP / GRV / RPM</li>
+          <li>• أنظمة أنابيب RTR / GRE</li>
+          <li>• أنابيب ووصلات الخرسانة المسلحة RCP</li>
+          <li>• خزانات GRP أحادية ومزدوجة الجدار</li>
+          <li>• خزانات خرسانية مسلحة</li>
+          <li>• غرف تفتيش ومناور ووصلات هيكلية من GRP</li>
+          <li>• غرف تفتيش وأحواض تصريف وقنوات صندوقية خرسانية</li>
+          <li>• خزائن عدادات الكهرباء والمياه من GRP</li>
+          <li>• صناديق الحريق والحمامات المتنقلة من GRP</li>
+        </ul>
+      </div>
 
-<div class="service-card bg-white p-8 rounded-2xl shadow border">
-<h3 class="text-2xl font-bold mb-4">المنتجات الفولاذية والإنشائية المتخصصة</h3>
-<p class="text-slate-600 mb-6">
-منتجات إنشائية وفولاذية مصممة لدعم التطبيقات الصناعية والتشغيلية والمشاريع المتخصصة.
-</p>
-<ul class="space-y-2 text-sm text-slate-700 leading-7">
-<li>• المشابك والقنوات والزوايا والمنتجات الفولاذية العامة</li>
-<li>• Roof Hatches (فتحات السقف)</li>
-<li>• السلالم المعدنية بأنواعها</li>
-<li>• دعامات السلالم من الاستانلس ستيل</li>
-<li>• أنظمة الحوامل الفولاذية</li>
-<li>• الأبواب الأمنية</li>
-<li>• الحاويات المعدلة والمهيأة للاستخدامات الصناعية</li>
-<li>• مظلات المواقف</li>
-<li>• المناهل والأغطية المعدنية</li>
-</ul>
-</div>
+      <div class="service-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">المنتجات الفولاذية والإنشائية المتخصصة</h3>
+        <p class="text-slate-600 mb-6 leading-8">
+          منتجات إنشائية وفولاذية مصممة لدعم التطبيقات الصناعية والتشغيلية والمشاريع المتخصصة.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 leading-7">
+          <li>• المشابك والقنوات والزوايا والمنتجات الفولاذية العامة</li>
+          <li>• Roof Hatches (فتحات السقف)</li>
+          <li>• السلالم المعدنية بأنواعها</li>
+          <li>• دعامات السلالم من الاستانلس ستيل</li>
+          <li>• أنظمة الحوامل الفولاذية</li>
+          <li>• الأبواب الأمنية</li>
+          <li>• الحاويات المعدلة والمهيأة للاستخدامات الصناعية</li>
+          <li>• مظلات المواقف</li>
+          <li>• المناهل والأغطية المعدنية</li>
+        </ul>
+      </div>
 
-<div class="service-card bg-white p-8 rounded-2xl shadow border">
-<h3 class="text-2xl font-bold mb-4">حلول التصنيع والهياكل الهندسية</h3>
-<p class="text-slate-600 mb-6">
-خدمات تصنيع وتجميع هندسي متقدم تلبي احتياجات المشاريع الصناعية والأنظمة التشغيلية المتخصصة.
-</p>
-<ul class="space-y-2 text-sm text-slate-700 leading-7">
-<li>• تصميم وتنفيذ وتجميع Skid Frames</li>
-<li>• تصميم وتنفيذ الهياكل المعدنية المخصصة</li>
-<li>• تصنيع وتجميع Pipe Spools</li>
-<li>• تصنيع خزانات الضغط والخزانات الصناعية</li>
-<li>• تصنيع منصات أنظمة الكلورة</li>
-<li>• تصنيع وحدات معالجة السوائل والتنقية</li>
-<li>• تصنيع مكونات الطاقة المتجددة</li>
-<li>• تصنيع أنظمة تخزين الطاقة وكبائن البطاريات</li>
-<li>• أعمال الحدادة التخصصية واللحام المتقدم</li>
-<li>• CNC Laser Cutting</li>
-<li>• CNC Machining</li>
-</ul>
-</div>
+      <div class="service-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">حلول التصنيع والهياكل الهندسية</h3>
+        <p class="text-slate-600 mb-6 leading-8">
+          خدمات تصنيع وتجميع هندسي متقدم تلبي احتياجات المشاريع الصناعية والأنظمة التشغيلية المتخصصة.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 leading-7">
+          <li>• تصميم وتنفيذ وتجميع Skid Frames</li>
+          <li>• تصميم وتنفيذ الهياكل المعدنية المخصصة</li>
+          <li>• تصنيع وتجميع Pipe Spools</li>
+          <li>• تصنيع خزانات الضغط والخزانات الصناعية</li>
+          <li>• تصنيع منصات أنظمة الكلورة</li>
+          <li>• تصنيع وحدات معالجة السوائل والتنقية</li>
+          <li>• تصنيع مكونات الطاقة المتجددة</li>
+          <li>• تصنيع أنظمة تخزين الطاقة وكبائن البطاريات</li>
+          <li>• أعمال الحدادة التخصصية واللحام المتقدم</li>
+          <li>• CNC Laser Cutting</li>
+          <li>• CNC Machining</li>
+        </ul>
+      </div>
 
-<div class="service-card bg-white p-8 rounded-2xl shadow border">
-<h3 class="text-2xl font-bold mb-4">منتجات القطاع الطبي والتعليمي</h3>
-<p class="text-slate-600 mb-6">
-منتجات وأنظمة متخصصة لتجهيز بيئات التعليم الطبي والتدريب السريري والمحاكاة التطبيقية.
-</p>
-<ul class="space-y-2 text-sm text-slate-700 leading-7">
-<li>• أجهزة ومجسمات المحاكاة الطبية</li>
-<li>• نماذج التدريب بالموجات فوق الصوتية Ultrasound Phantoms</li>
-<li>• أنظمة تدريب FAST وCentral Venous Catheter</li>
-<li>• حلول Vascular Access وPICC وPIV وArterial Line</li>
-<li>• أنظمة التدريب على Epidural وLumbar Puncture</li>
-<li>• أجهزة محاكاة ومجسمات طب الأسنان</li>
-<li>• وسائل تعليمية لطب الأسنان وطب أسنان الأطفال</li>
-</ul>
-</div>
+      <div class="service-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">منتجات القطاع الطبي والتعليمي</h3>
+        <p class="text-slate-600 mb-6 leading-8">
+          منتجات وأنظمة متخصصة لتجهيز بيئات التعليم الطبي والتدريب السريري والمحاكاة التطبيقية.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 leading-7">
+          <li>• أجهزة ومجسمات المحاكاة الطبية</li>
+          <li>• نماذج التدريب بالموجات فوق الصوتية Ultrasound Phantoms</li>
+          <li>• أنظمة تدريب FAST وCentral Venous Catheter</li>
+          <li>• حلول Vascular Access وPICC وPIV وArterial Line</li>
+          <li>• أنظمة التدريب على Epidural وLumbar Puncture</li>
+          <li>• أجهزة محاكاة ومجسمات طب الأسنان</li>
+          <li>• وسائل تعليمية لطب الأسنان وطب أسنان الأطفال</li>
+        </ul>
+      </div>
 
-<div class="service-card bg-white p-8 rounded-2xl shadow border">
-<h3 class="text-2xl font-bold mb-4">أنظمة المحاكاة والتدريب المتقدم</h3>
-<p class="text-slate-600 mb-6">
-حلول متقدمة لتجهيز معامل المحاكاة ومراكز التدريب باستخدام التقنيات التقليدية والرقمية.
-</p>
-<ul class="space-y-2 text-sm text-slate-700 leading-7">
-<li>• تجهيز معامل المحاكاة الطبية المتكاملة</li>
-<li>• تجهيز معامل محاكاة طب الأسنان</li>
-<li>• توريد الدمى التدريبية الطبية وملحقاتها</li>
-<li>• توريد أنظمة الصوت والصورة AV Systems</li>
-<li>• محاكاة الجراحة التخصصية</li>
-<li>• أنظمة الواقع الافتراضي VR للتدريب</li>
-<li>• أنظمة الواقع المعزز AR للتدريب</li>
-<li>• أنظمة الاتصال ثنائية الاتجاه لمعامل المحاكاة</li>
-</ul>
-</div>
+      <div class="service-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">أنظمة المحاكاة والتدريب المتقدم</h3>
+        <p class="text-slate-600 mb-6 leading-8">
+          حلول متقدمة لتجهيز معامل المحاكاة ومراكز التدريب باستخدام التقنيات التقليدية والرقمية.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 leading-7">
+          <li>• تجهيز معامل المحاكاة الطبية المتكاملة</li>
+          <li>• تجهيز معامل محاكاة طب الأسنان</li>
+          <li>• توريد الدمى التدريبية الطبية وملحقاتها</li>
+          <li>• توريد أنظمة الصوت والصورة AV Systems</li>
+          <li>• محاكاة الجراحة التخصصية</li>
+          <li>• أنظمة الواقع الافتراضي VR للتدريب</li>
+          <li>• أنظمة الواقع المعزز AR للتدريب</li>
+          <li>• أنظمة الاتصال ثنائية الاتجاه لمعامل المحاكاة</li>
+        </ul>
+      </div>
 
-<div class="service-card bg-white p-8 rounded-2xl shadow border">
-<h3 class="text-2xl font-bold mb-4">منتجات صناعية أخرى</h3>
-<p class="text-slate-600 mb-6">
-منتجات داعمة ومتكاملة لقطاعات صناعية متخصصة تشمل صناعات الفولاذ والألومنيوم.
-</p>
-<ul class="space-y-2 text-sm text-slate-700 leading-7">
-<li>• أقطاب الجرافيت Graphite Electrodes</li>
-<li>• كتل الكربون للأنود Anode Carbon Blocks</li>
-<li>• منتجات صناعية داعمة للقطاعات الثقيلة والتشغيلية</li>
-</ul>
-</div>
+      <div class="service-card bg-white p-8 rounded-2xl shadow border">
+        <h3 class="text-2xl font-bold mb-4">منتجات صناعية أخرى</h3>
+        <p class="text-slate-600 mb-6 leading-8">
+          منتجات داعمة ومتكاملة لقطاعات صناعية متخصصة تشمل صناعات الفولاذ والألومنيوم.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700 leading-7">
+          <li>• أقطاب الجرافيت Graphite Electrodes</li>
+          <li>• كتل الكربون للأنود Anode Carbon Blocks</li>
+          <li>• منتجات صناعية داعمة للقطاعات الثقيلة والتشغيلية</li>
+        </ul>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 </section>
 
-<section class="py-20">
-<div class="max-w-6xl mx-auto px-6 text-center">
-<h2 class="section-title mb-8">نهجنا في التنفيذ</h2>
-<p class="text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
-تعتمد فيف الدروب على الجمع بين التوريد المتخصص، الفهم الهندسي، والقدرة على مواءمة المنتجات والحلول مع احتياجات المشاريع، بما يحقق موثوقية تشغيلية وجودة تنفيذ واستجابة مرنة لمتطلبات العملاء والقطاعات المختلفة.
-</p>
-</div>
+<section class="py-16 md:py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="section-title mb-8">نهجنا في التنفيذ</h2>
+    <p class="text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
+      تعتمد فيف الدروب على الجمع بين التوريد المتخصص، الفهم الهندسي، والقدرة على مواءمة المنتجات والحلول مع احتياجات المشاريع، بما يحقق موثوقية تشغيلية وجودة تنفيذ واستجابة مرنة لمتطلبات العملاء والقطاعات المختلفة.
+    </p>
+  </div>
 </section>
 
-<section class="py-24 bg-gray-900 text-white">
-<div class="max-w-5xl mx-auto px-6 text-center">
-<h2 class="text-4xl font-black mb-6">تواصل معنا</h2>
+<section class="py-20 bg-gray-900 text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-black mb-6">تواصل معنا</h2>
 
-<p class="mb-4">فيف الدروب للتجارة</p>
-<p class="mb-4">المملكة العربية السعودية</p>
-<p class="mb-4">ص.ب 164</p>
-<p class="mb-10">الرياض 11528</p>
+    <p class="mb-4">فيف الدروب للتجارة</p>
+    <p class="mb-4">المملكة العربية السعودية</p>
+    <p class="mb-4">ص.ب 164</p>
+    <p class="mb-10">الرياض 11528</p>
 
-<p class="text-lg">
-<a href="mailto:info.durub@algtc.com?subject=استفسار عبر موقع فيف الدروب" class="underline decoration-white/30 underline-offset-4 hover:text-blue-300">
-info.durub@algtc.com
-</a>
-</p>
+    <p class="text-lg">
+      <a href="mailto:info.durub@algtc.com?subject=استفسار عبر موقع فيف الدروب" class="underline decoration-white/30 underline-offset-4 hover:text-blue-300">
+        info.durub@algtc.com
+      </a>
+    </p>
 
-<div class="mt-10">
-<a href="/contact" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl font-bold">
-صفحة التواصل
-</a>
-</div>
-</div>
+    <div class="mt-10">
+      <a href="/contact" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-xl font-bold">
+        صفحة التواصل
+      </a>
+    </div>
+  </div>
 </section>
 
 <footer class="bg-black text-gray-400 py-8 text-center text-sm">
-© 2026 Five Al Durub Trading
+  © 2026 Five Al Durub Trading
 </footer>
 
 </body>
